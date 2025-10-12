@@ -1,6 +1,6 @@
 # 👋 Hi, I'm Ghaith Buni
 
-🎓 I'm a Computer Science student
+🎓 I'm a Computer Science student  
 💻 Junior software developer focused on building real-world, full-stack projects  
 🛠️ Technologies: `JavaScript`, `Node.js`, `React`, `MongoDB`, `Next.js`, `Express`, `Java`  
 🌍 Based in Sweden | Open to **internships and full-time roles** (remote or on-site)
