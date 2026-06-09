@@ -1,51 +1,66 @@
-# 👋 Hi, I'm Ghaith Buni
+# Ghaith Buni
 
-🎓 I'm a Computer Science student at the University of Gävle  
-💻 Full-stack developer passionate about building real-world, scalable applications  
-🧠 Experienced with **React, Next.js, Node.js, TypeScript, and MongoDB**  
-🌍 Based in **Sweden** | Open to **internships and junior developer roles** (remote or on-site)
+Full-stack developer based in Sweden with a B.S. in Computer Science from the University of Gävle. I build production web applications and AI-powered backend systems using Python, TypeScript, and modern frameworks.
 
----
-
-## 💼 What I've Built
-
-### 🧹 [Cleaning & Moving Service App](https://github.com/GhaithBuni/viloserdet)
-A full-stack booking platform for cleaning and moving services, live at [www.vilöserdet.se](https://www.vilöserdet.se)  
-**Tech:** Next.js, Node.js, Express, MongoDB, Tailwind CSS, Sanity CMS  
-- Built RESTful APIs for bookings, pricing, and promotions  
-- Integrated secure admin dashboard with authentication and content management  
-- Deployed on Vercel with production users  
+**Backend:** Python, FastAPI, Node.js, Express, REST APIs, JWT auth, SSE streaming  
+**Frontend:** React, Next.js, TypeScript, Tailwind CSS  
+**Databases:** PostgreSQL, SQLModel, MongoDB, Prisma  
+**AI:** Claude API, OpenAI API, Groq API, multi-provider architecture  
+**DevOps:** Docker, Docker Compose, Railway, Vercel, Git
 
 ---
 
-### 💻 [Service Booking Platform (TypeScript)](https://github.com/GhaithBuni/swediana)
-Full TypeScript stack (Next.js + Express + MongoDB) with authentication and admin features  
-**Tech:** TypeScript, Next.js, Express, MongoDB, JWT, Zustand  
-- Implemented JWT authentication with access/refresh tokens  
-- Role-based guards and feature-based backend structure  
-- Client-side session persistence and error boundaries  
+## Projects
+
+### AI Chatbot with Memory
+A multi-provider AI chatbot API where conversations are stored in PostgreSQL. The AI remembers full context across sessions — not just the current message.
+
+**Stack:** FastAPI, PostgreSQL, Claude/Groq/OpenAI APIs, Docker, SSE streaming
+
+- Three AI providers (Claude, OpenAI, Groq) with a unified service layer — switch per conversation
+- Real-time response streaming using Server-Sent Events, delivering word-by-word AI responses
+- Conversation memory system that loads full message history and sends it to the AI with each request
+- Customizable system prompts per conversation (change the AI's personality)
+- Dockerized and deployed to Railway
 
 ---
 
-## 🧰 Tech Stack
+### E-Commerce API
+A complete e-commerce backend with cart, orders, stock management, and role-based admin access.
 
-**Languages:** JavaScript, TypeScript, Java  
-**Frontend:** React, Next.js, Tailwind CSS, Zustand  
-**Backend:** Node.js, Express.js, REST APIs, Sanity CMS  
-**Database:** MongoDB  
-**Tools:** Git, Postman, Vercel, JWT, bcrypt  
+**Stack:** FastAPI, PostgreSQL, SQLModel, Docker
 
----
-
-## 📈 Currently Learning
-- NestJS & PostgreSQL  
-- Testing (Jest, Playwright)  
-- Docker & CI/CD pipelines  
+- Database transactions for order placement: validates stock, creates order items, decreases inventory, clears cart — all atomically with rollback on failure
+- Order state machine with validated transitions (pending → confirmed → shipped → delivered / cancelled)
+- Purchase-verified reviews: only users who bought a product can review it
+- Dynamic product filtering: search by name, category, price range with pagination
+- Admin role-based access control for product and order management
 
 ---
 
-## 📫 How to Reach Me
-- [LinkedIn](https://www.linkedin.com/in/ghaith-buni/)  
-- 📧 ghaith.buni122@gmail.com  
+### Cleaning & Moving Service Platform
+A production booking platform for a real client, live at [vilöserdet.se](https://www.vilöserdet.se)
 
-Thanks for stopping by! 🙏
+**Stack:** Next.js, TypeScript, Node.js, Express, MongoDB, Tailwind CSS
+
+- Built and deployed for a real business with active customer bookings
+- Geolocation-based pricing, booking calendars, promotions, and discount codes
+- Admin dashboard with JWT auth, refresh tokens, and role-based access control
+- Form validation with Zod, optimistic UI updates, and protected routes
+
+---
+
+### Service Booking Platform
+A TypeScript-based booking system built with clean architecture principles.
+
+**Stack:** TypeScript, Next.js, Express, MongoDB, JWT, Zustand
+
+- Feature-based backend structure following clean architecture
+- Authentication with bcrypt, JWT access/refresh tokens, and role-based guards
+- Client-side session persistence and error boundaries
+
+---
+
+## Get in touch
+
+[LinkedIn](https://www.linkedin.com/in/ghaith-buni/) · ghaith.buni122@gmail.com
