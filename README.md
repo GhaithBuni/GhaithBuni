@@ -37,6 +37,16 @@ A complete e-commerce backend with cart, orders, stock management, and role-base
 - Admin role-based access control for product and order management
 
 ---
+### Service Booking Platform
+A TypeScript-based booking system built with clean architecture principles, live at [swediana.se](https://www.swediana.se)
+
+**Stack:** TypeScript, Next.js, Express, MongoDB, JWT, Zustand
+
+- Feature-based backend structure following clean architecture
+- Authentication with bcrypt, JWT access/refresh tokens, and role-based guards
+- Client-side session persistence and error boundaries
+
+---
 
 ### Cleaning & Moving Service Platform
 A production booking platform for a real client, live at [vilöserdet.se](https://www.vilöserdet.se)
@@ -50,16 +60,7 @@ A production booking platform for a real client, live at [vilöserdet.se](https:
 
 ---
 
-### Service Booking Platform
-A TypeScript-based booking system built with clean architecture principles.
 
-**Stack:** TypeScript, Next.js, Express, MongoDB, JWT, Zustand
-
-- Feature-based backend structure following clean architecture
-- Authentication with bcrypt, JWT access/refresh tokens, and role-based guards
-- Client-side session persistence and error boundaries
-
----
 
 ## Get in touch
 
